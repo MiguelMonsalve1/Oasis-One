@@ -1,0 +1,15 @@
+﻿@model List<OasisOneBack.Sedes> 
+@{
+    ViewBag.Title = "Nuestras Sedes";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Nuestras Sedes</h1>
+
+@foreach (var sede in Model)
+{
+    <div class="sede">
+        <h2>@sede.Nombre</h2>
+        <p>@sede.Direccion, @sede.Ciudad</p>
+    </div>
+}

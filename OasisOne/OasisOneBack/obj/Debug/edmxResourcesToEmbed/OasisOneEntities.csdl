@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="OasisOneModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Calificaciones_Servicios">
+    <Key>
+      <PropertyRef Name="Id_Calificacion" />
+    </Key>
+    <Property Name="Id_Calificacion" Type="Int32" Nullable="false" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Id_Servicio" Type="Int32" />
+    <Property Name="Puntuacion" Type="Int32" />
+    <Property Name="Comentario" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK__Calificac__Id_Se__76969D2E" FromRole="Calificaciones_Servicios" ToRole="Servicios" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Calificac__Id_Us__75A278F5" FromRole="Calificaciones_Servicios" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Categorias_Servicios">
+    <Key>
+      <PropertyRef Name="Id_Categoria" />
+    </Key>
+    <Property Name="Id_Categoria" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK__Servicios__Id_Ca__5BE2A6F2" FromRole="Categorias_Servicios" ToRole="Servicios" />
+  </EntityType>
+  <EntityType Name="Citas">
+    <Key>
+      <PropertyRef Name="Id_Cita" />
+    </Key>
+    <Property Name="Id_Cita" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Id_Empleado" Type="Int32" />
+    <Property Name="Id_Servicio" Type="Int32" />
+    <Property Name="Id_Sede" Type="Int32" />
+    <Property Name="Fecha_Hora" Type="DateTime" Precision="3" />
+    <Property Name="Estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK__Citas__Id_Emplea__5FB337D6" FromRole="Citas" ToRole="Empleados" />
+    <NavigationProperty Name="Sedes" Relationship="Self.FK__Citas__Id_Sede__619B8048" FromRole="Citas" ToRole="Sedes" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK__Citas__Id_Servic__60A75C0F" FromRole="Citas" ToRole="Servicios" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Citas__Id_Usuari__5EBF139D" FromRole="Citas" ToRole="Usuarios" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK__Facturas__Id_Cit__70DDC3D8" FromRole="Citas" ToRole="Facturas" />
+  </EntityType>
+  <EntityType Name="Disponibilidad_Empleados">
+    <Key>
+      <PropertyRef Name="Id_Disponibilidad" />
+    </Key>
+    <Property Name="Id_Disponibilidad" Type="Int32" Nullable="false" />
+    <Property Name="Id_Empleado" Type="Int32" />
+    <Property Name="Dia_Semana" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_Inicio" Type="Time" Precision="7" />
+    <Property Name="Hora_Fin" Type="Time" Precision="7" />
+    <Property Name="Id_Sede" Type="Int32" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK__Disponibi__Id_Em__6477ECF3" FromRole="Disponibilidad_Empleados" ToRole="Empleados" />
+    <NavigationProperty Name="Sedes" Relationship="Self.FK__Disponibi__Id_Se__656C112C" FromRole="Disponibilidad_Empleados" ToRole="Sedes" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="Id_Empleado" />
+    </Key>
+    <Property Name="Id_Empleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Sede" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Cargo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Citas" Relationship="Self.FK__Citas__Id_Emplea__5FB337D6" FromRole="Empleados" ToRole="Citas" />
+    <NavigationProperty Name="Disponibilidad_Empleados" Relationship="Self.FK__Disponibi__Id_Em__6477ECF3" FromRole="Empleados" ToRole="Disponibilidad_Empleados" />
+    <NavigationProperty Name="Sedes" Relationship="Self.FK__Empleados__Id_Se__5165187F" FromRole="Empleados" ToRole="Sedes" />
+    <NavigationProperty Name="Sesiones_Empleados" Relationship="Self.FK__Sesiones___Id_Em__571DF1D5" FromRole="Empleados" ToRole="Sesiones_Empleados" />
+  </EntityType>
+  <EntityType Name="Facturas">
+    <Key>
+      <PropertyRef Name="Id_Factura" />
+    </Key>
+    <Property Name="Id_Factura" Type="Int32" Nullable="false" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Id_Cita" Type="Int32" />
+    <Property Name="Id_Sede" Type="Int32" />
+    <Property Name="Fecha_Emision" Type="DateTime" Precision="3" />
+    <Property Name="Total" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Citas" Relationship="Self.FK__Facturas__Id_Cit__70DDC3D8" FromRole="Facturas" ToRole="Citas" />
+    <NavigationProperty Name="Sedes" Relationship="Self.FK__Facturas__Id_Sed__71D1E811" FromRole="Facturas" ToRole="Sedes" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Facturas__Id_Usu__6FE99F9F" FromRole="Facturas" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Historial_Servicios">
+    <Key>
+      <PropertyRef Name="Id_Historial" />
+    </Key>
+    <Property Name="Id_Historial" Type="Int32" Nullable="false" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Id_Servicio" Type="Int32" />
+    <Property Name="Fecha_Servicio" Type="DateTime" Precision="3" />
+    <Property Name="Observaciones" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Servicios" Relationship="Self.FK__Historial__Id_Se__7A672E12" FromRole="Historial_Servicios" ToRole="Servicios" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Historial__Id_Us__797309D9" FromRole="Historial_Servicios" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Inventario_Productos">
+    <Key>
+      <PropertyRef Name="Id_Producto" />
+    </Key>
+    <Property Name="Id_Producto" Type="Int32" Nullable="false" />
+    <Property Name="Id_Sede" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Precio_Unitario" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Sedes" Relationship="Self.FK__Inventari__Id_Se__68487DD7" FromRole="Inventario_Productos" ToRole="Sedes" />
+  </EntityType>
+  <EntityType Name="Notificaciones">
+    <Key>
+      <PropertyRef Name="Id_Notificacion" />
+    </Key>
+    <Property Name="Id_Notificacion" Type="Int32" Nullable="false" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Mensaje" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Envio" Type="DateTime" Precision="3" />
+    <Property Name="Leido" Type="Boolean" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Notificac__Id_Us__7D439ABD" FromRole="Notificaciones" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Productos_Proveedor">
+    <Key>
+      <PropertyRef Name="Id_Producto" />
+    </Key>
+    <Property Name="Id_Producto" Type="Int32" Nullable="false" />
+    <Property Name="Id_Proveedor" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Precio_Unitario" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Proveedores" Relationship="Self.FK__Productos__Id_Pr__6D0D32F4" FromRole="Productos_Proveedor" ToRole="Proveedores" />
+  </EntityType>
+  <EntityType Name="Proveedores">
+    <Key>
+      <PropertyRef Name="Id_Proveedor" />
+    </Key>
+    <Property Name="Id_Proveedor" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Productos_Proveedor" Relationship="Self.FK__Productos__Id_Pr__6D0D32F4" FromRole="Proveedores" ToRole="Productos_Proveedor" />
+  </EntityType>
+  <EntityType Name="Sedes">
+    <Key>
+      <PropertyRef Name="Id_Sede" />
+    </Key>
+    <Property Name="Id_Sede" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Correo_Contacto" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Citas" Relationship="Self.FK__Citas__Id_Sede__619B8048" FromRole="Sedes" ToRole="Citas" />
+    <NavigationProperty Name="Disponibilidad_Empleados" Relationship="Self.FK__Disponibi__Id_Se__656C112C" FromRole="Sedes" ToRole="Disponibilidad_Empleados" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK__Empleados__Id_Se__5165187F" FromRole="Sedes" ToRole="Empleados" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK__Facturas__Id_Sed__71D1E811" FromRole="Sedes" ToRole="Facturas" />
+    <NavigationProperty Name="Inventario_Productos" Relationship="Self.FK__Inventari__Id_Se__68487DD7" FromRole="Sedes" ToRole="Inventario_Productos" />
+  </EntityType>
+  <EntityType Name="Servicios">
+    <Key>
+      <PropertyRef Name="Id_Servicio" />
+    </Key>
+    <Property Name="Id_Servicio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Categoria" Type="Int32" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Duracion_Minutos" Type="Int32" />
+    <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Calificaciones_Servicios" Relationship="Self.FK__Calificac__Id_Se__76969D2E" FromRole="Servicios" ToRole="Calificaciones_Servicios" />
+    <NavigationProperty Name="Categorias_Servicios" Relationship="Self.FK__Servicios__Id_Ca__5BE2A6F2" FromRole="Servicios" ToRole="Categorias_Servicios" />
+    <NavigationProperty Name="Citas" Relationship="Self.FK__Citas__Id_Servic__60A75C0F" FromRole="Servicios" ToRole="Citas" />
+    <NavigationProperty Name="Historial_Servicios" Relationship="Self.FK__Historial__Id_Se__7A672E12" FromRole="Servicios" ToRole="Historial_Servicios" />
+  </EntityType>
+  <EntityType Name="Sesiones_Empleados">
+    <Key>
+      <PropertyRef Name="Id_Sesion" />
+    </Key>
+    <Property Name="Id_Sesion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Empleado" Type="Int32" />
+    <Property Name="Fecha_Inicio" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Fin" Type="DateTime" Precision="3" />
+    <Property Name="Token" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK__Sesiones___Id_Em__571DF1D5" FromRole="Sesiones_Empleados" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Sesiones_Usuarios">
+    <Key>
+      <PropertyRef Name="Id_Sesion" />
+    </Key>
+    <Property Name="Id_Sesion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Id_Usuario" Type="Int32" />
+    <Property Name="Fecha_Inicio" Type="DateTime" Precision="3" />
+    <Property Name="Fecha_Fin" Type="DateTime" Precision="3" />
+    <Property Name="Token" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Usuarios" Relationship="Self.FK__Sesiones___Id_Us__5441852A" FromRole="Sesiones_Usuarios" ToRole="Usuarios" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="Id_Usuario" />
+    </Key>
+    <Property Name="Id_Usuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Apellido" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Registro" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="Boolean" />
+    <NavigationProperty Name="Calificaciones_Servicios" Relationship="Self.FK__Calificac__Id_Us__75A278F5" FromRole="Usuarios" ToRole="Calificaciones_Servicios" />
+    <NavigationProperty Name="Citas" Relationship="Self.FK__Citas__Id_Usuari__5EBF139D" FromRole="Usuarios" ToRole="Citas" />
+    <NavigationProperty Name="Facturas" Relationship="Self.FK__Facturas__Id_Usu__6FE99F9F" FromRole="Usuarios" ToRole="Facturas" />
+    <NavigationProperty Name="Historial_Servicios" Relationship="Self.FK__Historial__Id_Us__797309D9" FromRole="Usuarios" ToRole="Historial_Servicios" />
+    <NavigationProperty Name="Notificaciones" Relationship="Self.FK__Notificac__Id_Us__7D439ABD" FromRole="Usuarios" ToRole="Notificaciones" />
+    <NavigationProperty Name="Sesiones_Usuarios" Relationship="Self.FK__Sesiones___Id_Us__5441852A" FromRole="Usuarios" ToRole="Sesiones_Usuarios" />
+  </EntityType>
+  <Association Name="FK__Calificac__Id_Se__76969D2E">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+    <End Role="Calificaciones_Servicios" Type="Self.Calificaciones_Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="Id_Servicio" />
+      </Principal>
+      <Dependent Role="Calificaciones_Servicios">
+        <PropertyRef Name="Id_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Calificac__Id_Us__75A278F5">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Calificaciones_Servicios" Type="Self.Calificaciones_Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Calificaciones_Servicios">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Servicios__Id_Ca__5BE2A6F2">
+    <End Role="Categorias_Servicios" Type="Self.Categorias_Servicios" Multiplicity="0..1" />
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categorias_Servicios">
+        <PropertyRef Name="Id_Categoria" />
+      </Principal>
+      <Dependent Role="Servicios">
+        <PropertyRef Name="Id_Categoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Citas__Id_Emplea__5FB337D6">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Citas">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Citas__Id_Sede__619B8048">
+    <End Role="Sedes" Type="Self.Sedes" Multiplicity="0..1" />
+    <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sedes">
+        <PropertyRef Name="Id_Sede" />
+      </Principal>
+      <Dependent Role="Citas">
+        <PropertyRef Name="Id_Sede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Citas__Id_Servic__60A75C0F">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+    <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="Id_Servicio" />
+      </Principal>
+      <Dependent Role="Citas">
+        <PropertyRef Name="Id_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Citas__Id_Usuari__5EBF139D">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Citas" Type="Self.Citas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Citas">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Facturas__Id_Cit__70DDC3D8">
+    <End Role="Citas" Type="Self.Citas" Multiplicity="0..1" />
+    <End Role="Facturas" Type="Self.Facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Citas">
+        <PropertyRef Name="Id_Cita" />
+      </Principal>
+      <Dependent Role="Facturas">
+        <PropertyRef Name="Id_Cita" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Disponibi__Id_Em__6477ECF3">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Disponibilidad_Empleados" Type="Self.Disponibilidad_Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Disponibilidad_Empleados">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Disponibi__Id_Se__656C112C">
+    <End Role="Sedes" Type="Self.Sedes" Multiplicity="0..1" />
+    <End Role="Disponibilidad_Empleados" Type="Self.Disponibilidad_Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sedes">
+        <PropertyRef Name="Id_Sede" />
+      </Principal>
+      <Dependent Role="Disponibilidad_Empleados">
+        <PropertyRef Name="Id_Sede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleados__Id_Se__5165187F">
+    <End Role="Sedes" Type="Self.Sedes" Multiplicity="0..1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sedes">
+        <PropertyRef Name="Id_Sede" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="Id_Sede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sesiones___Id_Em__571DF1D5">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="0..1" />
+    <End Role="Sesiones_Empleados" Type="Self.Sesiones_Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="Id_Empleado" />
+      </Principal>
+      <Dependent Role="Sesiones_Empleados">
+        <PropertyRef Name="Id_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Facturas__Id_Sed__71D1E811">
+    <End Role="Sedes" Type="Self.Sedes" Multiplicity="0..1" />
+    <End Role="Facturas" Type="Self.Facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sedes">
+        <PropertyRef Name="Id_Sede" />
+      </Principal>
+      <Dependent Role="Facturas">
+        <PropertyRef Name="Id_Sede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Facturas__Id_Usu__6FE99F9F">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Facturas" Type="Self.Facturas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Facturas">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Historial__Id_Se__7A672E12">
+    <End Role="Servicios" Type="Self.Servicios" Multiplicity="0..1" />
+    <End Role="Historial_Servicios" Type="Self.Historial_Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicios">
+        <PropertyRef Name="Id_Servicio" />
+      </Principal>
+      <Dependent Role="Historial_Servicios">
+        <PropertyRef Name="Id_Servicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Historial__Id_Us__797309D9">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Historial_Servicios" Type="Self.Historial_Servicios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Historial_Servicios">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Inventari__Id_Se__68487DD7">
+    <End Role="Sedes" Type="Self.Sedes" Multiplicity="0..1" />
+    <End Role="Inventario_Productos" Type="Self.Inventario_Productos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sedes">
+        <PropertyRef Name="Id_Sede" />
+      </Principal>
+      <Dependent Role="Inventario_Productos">
+        <PropertyRef Name="Id_Sede" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Notificac__Id_Us__7D439ABD">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Notificaciones" Type="Self.Notificaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Notificaciones">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Productos__Id_Pr__6D0D32F4">
+    <End Role="Proveedores" Type="Self.Proveedores" Multiplicity="0..1" />
+    <End Role="Productos_Proveedor" Type="Self.Productos_Proveedor" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Proveedores">
+        <PropertyRef Name="Id_Proveedor" />
+      </Principal>
+      <Dependent Role="Productos_Proveedor">
+        <PropertyRef Name="Id_Proveedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Sesiones___Id_Us__5441852A">
+    <End Role="Usuarios" Type="Self.Usuarios" Multiplicity="0..1" />
+    <End Role="Sesiones_Usuarios" Type="Self.Sesiones_Usuarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Principal>
+      <Dependent Role="Sesiones_Usuarios">
+        <PropertyRef Name="Id_Usuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="OasisOneEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Calificaciones_Servicios" EntityType="Self.Calificaciones_Servicios" />
+    <EntitySet Name="Categorias_Servicios" EntityType="Self.Categorias_Servicios" />
+    <EntitySet Name="Citas" EntityType="Self.Citas" />
+    <EntitySet Name="Disponibilidad_Empleados" EntityType="Self.Disponibilidad_Empleados" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+    <EntitySet Name="Facturas" EntityType="Self.Facturas" />
+    <EntitySet Name="Historial_Servicios" EntityType="Self.Historial_Servicios" />
+    <EntitySet Name="Inventario_Productos" EntityType="Self.Inventario_Productos" />
+    <EntitySet Name="Notificaciones" EntityType="Self.Notificaciones" />
+    <EntitySet Name="Productos_Proveedor" EntityType="Self.Productos_Proveedor" />
+    <EntitySet Name="Proveedores" EntityType="Self.Proveedores" />
+    <EntitySet Name="Sedes" EntityType="Self.Sedes" />
+    <EntitySet Name="Servicios" EntityType="Self.Servicios" />
+    <EntitySet Name="Sesiones_Empleados" EntityType="Self.Sesiones_Empleados" />
+    <EntitySet Name="Sesiones_Usuarios" EntityType="Self.Sesiones_Usuarios" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+    <AssociationSet Name="FK__Calificac__Id_Se__76969D2E" Association="Self.FK__Calificac__Id_Se__76969D2E">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="Calificaciones_Servicios" EntitySet="Calificaciones_Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Calificac__Id_Us__75A278F5" Association="Self.FK__Calificac__Id_Us__75A278F5">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Calificaciones_Servicios" EntitySet="Calificaciones_Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Servicios__Id_Ca__5BE2A6F2" Association="Self.FK__Servicios__Id_Ca__5BE2A6F2">
+      <End Role="Categorias_Servicios" EntitySet="Categorias_Servicios" />
+      <End Role="Servicios" EntitySet="Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Citas__Id_Emplea__5FB337D6" Association="Self.FK__Citas__Id_Emplea__5FB337D6">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Citas" EntitySet="Citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Citas__Id_Sede__619B8048" Association="Self.FK__Citas__Id_Sede__619B8048">
+      <End Role="Sedes" EntitySet="Sedes" />
+      <End Role="Citas" EntitySet="Citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Citas__Id_Servic__60A75C0F" Association="Self.FK__Citas__Id_Servic__60A75C0F">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="Citas" EntitySet="Citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Citas__Id_Usuari__5EBF139D" Association="Self.FK__Citas__Id_Usuari__5EBF139D">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Citas" EntitySet="Citas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Facturas__Id_Cit__70DDC3D8" Association="Self.FK__Facturas__Id_Cit__70DDC3D8">
+      <End Role="Citas" EntitySet="Citas" />
+      <End Role="Facturas" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Disponibi__Id_Em__6477ECF3" Association="Self.FK__Disponibi__Id_Em__6477ECF3">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Disponibilidad_Empleados" EntitySet="Disponibilidad_Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Disponibi__Id_Se__656C112C" Association="Self.FK__Disponibi__Id_Se__656C112C">
+      <End Role="Sedes" EntitySet="Sedes" />
+      <End Role="Disponibilidad_Empleados" EntitySet="Disponibilidad_Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleados__Id_Se__5165187F" Association="Self.FK__Empleados__Id_Se__5165187F">
+      <End Role="Sedes" EntitySet="Sedes" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sesiones___Id_Em__571DF1D5" Association="Self.FK__Sesiones___Id_Em__571DF1D5">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Sesiones_Empleados" EntitySet="Sesiones_Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Facturas__Id_Sed__71D1E811" Association="Self.FK__Facturas__Id_Sed__71D1E811">
+      <End Role="Sedes" EntitySet="Sedes" />
+      <End Role="Facturas" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Facturas__Id_Usu__6FE99F9F" Association="Self.FK__Facturas__Id_Usu__6FE99F9F">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Facturas" EntitySet="Facturas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Historial__Id_Se__7A672E12" Association="Self.FK__Historial__Id_Se__7A672E12">
+      <End Role="Servicios" EntitySet="Servicios" />
+      <End Role="Historial_Servicios" EntitySet="Historial_Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Historial__Id_Us__797309D9" Association="Self.FK__Historial__Id_Us__797309D9">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Historial_Servicios" EntitySet="Historial_Servicios" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Inventari__Id_Se__68487DD7" Association="Self.FK__Inventari__Id_Se__68487DD7">
+      <End Role="Sedes" EntitySet="Sedes" />
+      <End Role="Inventario_Productos" EntitySet="Inventario_Productos" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Notificac__Id_Us__7D439ABD" Association="Self.FK__Notificac__Id_Us__7D439ABD">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Notificaciones" EntitySet="Notificaciones" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Productos__Id_Pr__6D0D32F4" Association="Self.FK__Productos__Id_Pr__6D0D32F4">
+      <End Role="Proveedores" EntitySet="Proveedores" />
+      <End Role="Productos_Proveedor" EntitySet="Productos_Proveedor" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Sesiones___Id_Us__5441852A" Association="Self.FK__Sesiones___Id_Us__5441852A">
+      <End Role="Usuarios" EntitySet="Usuarios" />
+      <End Role="Sesiones_Usuarios" EntitySet="Sesiones_Usuarios" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

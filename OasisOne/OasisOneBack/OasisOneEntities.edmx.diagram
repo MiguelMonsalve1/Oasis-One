@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="f1e0d99bd75847e3b72da7f28f5f373f" Name="Diagram1">
+        <EntityTypeShape EntityType="OasisOneModel.Calificaciones_Servicios" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Categorias_Servicios" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Citas" Width="1.5" PointX="6" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Disponibilidad_Empleados" Width="1.5" PointX="9" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Empleados" Width="1.5" PointX="3.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Facturas" Width="1.5" PointX="8.25" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Historial_Servicios" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Inventario_Productos" Width="1.5" PointX="3.75" PointY="25.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Notificaciones" Width="1.5" PointX="3" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Productos_Proveedor" Width="1.5" PointX="8" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Proveedores" Width="1.5" PointX="5.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Sedes" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Servicios" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Sesiones_Empleados" Width="1.5" PointX="6" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Sesiones_Usuarios" Width="1.5" PointX="3" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OasisOneModel.Usuarios" Width="1.5" PointX="0.75" PointY="8.75" IsExpanded="true" />
+        <AssociationConnector Association="OasisOneModel.FK__Calificac__Id_Se__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Calificac__Id_Us__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Servicios__Id_Ca__5BE2A6F2" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Citas__Id_Emplea__5FB337D6" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Citas__Id_Sede__619B8048" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Citas__Id_Servic__60A75C0F" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Citas__Id_Usuari__5EBF139D" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Facturas__Id_Cit__70DDC3D8" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Disponibi__Id_Em__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Disponibi__Id_Se__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Empleados__Id_Se__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Sesiones___Id_Em__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Facturas__Id_Sed__71D1E811" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Facturas__Id_Usu__6FE99F9F" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Historial__Id_Se__7A672E12" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Historial__Id_Us__797309D9" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Inventari__Id_Se__68487DD7" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Notificac__Id_Us__7D439ABD" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Productos__Id_Pr__6D0D32F4" ManuallyRouted="false" />
+        <AssociationConnector Association="OasisOneModel.FK__Sesiones___Id_Us__5441852A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

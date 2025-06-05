@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35122.118
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OasisOneBack", "OasisOneBack\OasisOneBack.csproj", "{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73F1D4DE-E56C-4E85-987A-01006BE97162}
+	EndGlobalSection
+EndGlobal

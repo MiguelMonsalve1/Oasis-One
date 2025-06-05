@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|c:\\users\\migue\\source\\repos\\oasis-one\\oasisone\\oasisoneback\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\controllers\\consultascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\controllers\\paginascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\controllers\\paginascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\controllers\\sedescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\migue\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\views\\paginas\\sedes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\views\\paginas\\sedes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\views\\paginas\\servicios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\views\\paginas\\servicios.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\clases\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\clases\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.edmx.diagram||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.context.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\oasisoneback\\oasisoneentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{8D6224B9-1CFA-48ED-B714-5DC76AE364D0}|OasisOneBack\\OasisOneBack.csproj|solutionrelative:oasisoneback\\oasisoneentities.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsultasController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\ConsultasController.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Controllers\\ConsultasController.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\ConsultasController.cs",
+              "RelativeToolTip": "OasisOneBack\\Controllers\\ConsultasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T01:36:55.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "OasisOneBack\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "OasisOneBack\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T19:03:09.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SedesController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\SedesController.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Controllers\\SedesController.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\SedesController.cs",
+              "RelativeToolTip": "OasisOneBack\\Controllers\\SedesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T19:22:29.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sedes.cshtml",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Paginas\\Sedes.cshtml",
+              "RelativeDocumentMoniker": "OasisOneBack\\Views\\Paginas\\Sedes.cshtml",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Paginas\\Sedes.cshtml",
+              "RelativeToolTip": "OasisOneBack\\Views\\Paginas\\Sedes.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T19:02:21.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaginasController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\PaginasController.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Controllers\\PaginasController.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\PaginasController.cs",
+              "RelativeToolTip": "OasisOneBack\\Controllers\\PaginasController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T19:01:10.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PerfCounters.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs",
+              "ToolTip": "C:\\Users\\migue\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs [Solo lectura]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\6eca1a405f325a1d6d8b96ec9aad3bdbd67aa19a1d3c926419f117fcd63e17bc\\PerfCounters.cs [Solo lectura]",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAawFkAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T20:34:16.673Z",
+              "EditorCaption": " [Solo lectura]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "OasisOneBack\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T07:20:25.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "OasisOneBack\\Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T17:38:26.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "OasisOneBack\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "OasisOneBack\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T19:03:13.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Servicios.cshtml",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Paginas\\Servicios.cshtml",
+              "RelativeDocumentMoniker": "OasisOneBack\\Views\\Paginas\\Servicios.cshtml",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Views\\Paginas\\Servicios.cshtml",
+              "RelativeToolTip": "OasisOneBack\\Views\\Paginas\\Servicios.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-05T19:02:36.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OasisOneEntities.tt",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.tt",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.tt",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.tt",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-01T19:50:22.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "OasisOneEntities.edmx.diagram",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.edmx.diagram",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.edmx.diagram",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.edmx.diagram",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.edmx.diagram",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-01T19:50:19.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Clases\\Login.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\Clases\\Login.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Clases\\Login.cs",
+              "RelativeToolTip": "OasisOneBack\\Clases\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T02:44:39.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OasisOneEntities.Context.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Context.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.Context.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Context.cs",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.Context.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAApwCoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:50:08.904Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OasisOneEntities.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Designer.cs",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.Designer.cs",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Designer.cs",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:50:18.515Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "OasisOneEntities.Context.tt",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Context.tt",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.Context.tt",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.Context.tt",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.Context.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-01T19:50:05.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OasisOneEntities.edmx [Diagram1]",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.edmx",
+              "RelativeDocumentMoniker": "OasisOneBack\\OasisOneEntities.edmx",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\OasisOneEntities.edmx [Diagram1]",
+              "RelativeToolTip": "OasisOneBack\\OasisOneEntities.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-06-01T03:26:36.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Web.config",
+              "RelativeDocumentMoniker": "OasisOneBack\\Web.config",
+              "ToolTip": "C:\\Users\\migue\\source\\repos\\Oasis-One\\OasisOne\\OasisOneBack\\Web.config",
+              "RelativeToolTip": "OasisOneBack\\Web.config",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAAE8AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-01T03:24:35.207Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
