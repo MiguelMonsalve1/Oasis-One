@@ -1,0 +1,45 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\krlyg\\source\\repos\\Oasis-One\\OasisOne\\OasisOneFrontend\\OasisOneFrontend\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\OasisOneFrontend.bundle.scp.css",
+      "PackagePath": "staticwebassets\\OasisOneFrontend.omn4nxec7y.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\krlyg\\source\\repos\\Oasis-One\\OasisOne\\OasisOneFrontend\\OasisOneFrontend\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\krlyg\\source\\repos\\Oasis-One\\OasisOne\\OasisOneFrontend\\OasisOneFrontend\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\krlyg\\source\\repos\\Oasis-One\\OasisOne\\OasisOneFrontend\\OasisOneFrontend\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\krlyg\\source\\repos\\Oasis-One\\OasisOne\\OasisOneFrontend\\OasisOneFrontend\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OasisOneFrontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.OasisOneFrontend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.OasisOneFrontend.props",
+      "PackagePath": "build\\OasisOneFrontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.OasisOneFrontend.props",
+      "PackagePath": "buildMultiTargeting\\OasisOneFrontend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.OasisOneFrontend.props",
+      "PackagePath": "buildTransitive\\OasisOneFrontend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
