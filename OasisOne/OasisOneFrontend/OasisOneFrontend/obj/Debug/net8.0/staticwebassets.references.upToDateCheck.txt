@@ -1,1 +1,0 @@
-C:\Users\krlyg\source\repos\Oasis-One\OasisOne\OasisOneFrontend\OasisOneFrontend.Client\obj\Debug\net8.0\staticwebassets.build.json
